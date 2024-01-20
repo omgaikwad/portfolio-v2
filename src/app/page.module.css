@@ -9,19 +9,59 @@
   align-items: center;
 }
 
-.hero_container {
+.hero_section {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 10vh);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.hero_section__left_container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.hero_section__left_container__text {
+  padding: 1rem;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 5rem;
+  /* border: 1px solid var(--secondary-color); */
+}
+
+.hero_section__right_container {
+  width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+.avatar_container {
+  width: 5rem;
+  height: 5rem;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .navbar {
   width: 100%;
   height: 10vh;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   display: flex;
@@ -29,8 +69,21 @@
   justify-content: space-around;
 }
 
+.button {
+  width: fit-content;
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: "Bricolage Grotesque", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
 .logo_container {
-  height: 75%;
+  height: 100%;
 }
 
 .logo {
@@ -40,14 +93,38 @@
 .heading {
   font-family: "Anton", sans-serif;
   color: var(--primary-color);
-  font-size: 5rem;
+  font-size: 3.5rem;
 }
 
 .sub_heading {
   font-family: "Bricolage Grotesque", sans-serif;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 2rem;
 }
+
+.about_summary {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+}
+
+.highlighted_text {
+  font-family: "Bricolage Grotesque", sans-serif;
+  color: var(--secondary-color);
+}
+
+@keyframes wave {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 10;
+  }
+}
+
+/* .wave {
+  stroke-dasharray: 10;
+  animation: wave 4s linear infinite;
+} */
 
 @keyframes wave {
   0% {
@@ -58,25 +135,38 @@
   }
 }
 
-.hamburger_container {
-  height: 75%;
-  width: 4rem;
-  cursor: pointer;
-  z-index: 1;
-  border: 1px solid red;
-
-  background-image: url("data:image/svg+xml,%3Csvg width='4rem' height='100%25' xmlns='http://www.w3.org/2000/svg' viewBox='-0.4 -0.97735 10.8 7.955'%3E%3Cpath class='wave' d='M 0 0 C 2 -2 3 2 5 0 C 7 -2 8 2 10 0 M 0 3 C 2 1 3 5 5 3 C 7 1 8 5 10 3 M 0 6 C 2 4 3 8 5 6 C 7 4 8 8 10 6' stroke='%235ebec4' stroke-width='0.4' fill='none'/%3E%3C/svg%3E");
-  background-repeat: repeat-x;
-  animation: wave 3s linear infinite;
-
-  background-position: center;
-  background-size: 50%;
-}
-.wave {
+/* .wave {
   position: relative;
   animation: wave 3s linear infinite;
   color: var(--primary-color);
-}
+} */
 .w--open .wave {
   animation: wave 0.5s linear reverse infinite;
+}
+
+.experience_section {
+  width: 100vw;
+  border: 1px solid var(--secondary-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.experience_card_container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 2px solid var(--secondary-color);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.section_heading {
+  font-family: "Bricolage Grotesque", sans-serif;
+  color: var(--primary-color);
+  font-size: 3rem;
 }

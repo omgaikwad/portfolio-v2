@@ -1,6 +1,19 @@
+"use client";
+
+import ExperienceCard from "@/components/ExperienceCard/ExperienceCard";
 import styles from "./page.module.css";
+import { motion } from "framer-motion";
+
+const HighlightedText = ({ children }) => (
+  <span className={styles["highlighted_text"]}>{children}</span>
+);
 
 export default function Home() {
+  const transition = {
+    duration: 4,
+    ease: "easeInOut",
+  };
+
   return (
     <main className={styles.main}>
       <div className={styles["navbar"]}>
@@ -13,26 +26,47 @@ export default function Home() {
         </div>
 
         <div className={styles["hamburger_container"]}>
-          {/* <svg
-            width="4rem"
-            height="100%"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="-0.4 -0.97735 10.8 7.955"
-          >
-            <path
-              class={styles["wave"]}
-              d="M 0 0 C 2 -2 3 2 5 0 C 7 -2 8 2 10 0 M 0 3 C 2 1 3 5 5 3 C 7 1 8 5 10 3 M 0 6 C 2 4 3 8 5 6 C 7 4 8 8 10 6"
-              stroke="#5ebec4"
-              stroke-width="0.4"
-              fill="none"
-            />
-          </svg> */}
+          <button className={styles["button"]}>Download Resume</button>
         </div>
       </div>
 
-      <div className={styles["hero_container"]}>
-        <h1 className={styles["heading"]}>Om Gaikwad</h1>
-        <p className={styles["heading"]}>Full Stack Developer</p>
+      <div className={styles["hero_section"]}>
+        <div className={styles["hero_section__left_container"]}>
+          <div className={styles["hero_section__left_container__text"]}>
+            <div className={styles["avatar_container"]}>
+              <img
+                src="/assets/images/profile_pic.jpeg"
+                alt="hero"
+                className={styles["avatar"]}
+              />
+            </div>
+            <h1 className={styles["heading"]}>Om Gaikwad</h1>
+            <p className={styles["sub_heading"]}>Software engineer</p>
+            <p className={styles["about_summary"]}>
+              I'm Om Gaikwad, a software engineer based in Pune, India. I
+              currently work as a SDE Frontend at BrainCells for over 1.5 years.
+              I love building innovative, scalable and responsive products while
+              crafting beautiful user experiences.
+            </p>
+
+            <button style={{ marginTop: "1rem" }} className={styles["button"]}>
+              Download Resume
+            </button>
+          </div>
+        </div>
+
+        <div className={styles["hero_section__right_container"]}>klsjdf</div>
+      </div>
+
+      <div className={styles["experience_section"]}>
+        <h2 className={styles["section_heading"]}>Experience</h2>
+
+        <div className={styles["experience_card_container"]}>
+          <ExperienceCard />
+          <ExperienceCard />
+          <ExperienceCard />
+          <ExperienceCard />
+        </div>
       </div>
     </main>
   );
