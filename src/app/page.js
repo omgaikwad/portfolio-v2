@@ -1,8 +1,8 @@
 "use client";
 
 import ExperienceCard from "@/components/ExperienceCard/ExperienceCard";
+import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import styles from "./page.module.css";
-import { motion } from "framer-motion";
 
 const HighlightedText = ({ children }) => (
   <span className={styles["highlighted_text"]}>{children}</span>
@@ -66,6 +66,16 @@ export default function Home() {
           <ExperienceCard />
           <ExperienceCard />
           <ExperienceCard />
+        </div>
+      </div>
+
+      <div className={styles["project_section"]}>
+        <h2 className={styles["section_heading"]}>Projects</h2>
+
+        <div className={styles["project_card_container"]}>
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
         </div>
       </div>
     </main>

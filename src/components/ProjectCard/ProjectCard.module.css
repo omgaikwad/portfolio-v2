@@ -1,0 +1,72 @@
+.project_card {
+  width: 100%;
+  height: 8rem;
+  /* border: 2px solid var(--secondary-color); */
+  border-radius: 8px;
+  display: flex;
+  padding: 1rem;
+
+  box-shadow: -8px 11px 15px 0px rgba(249, 44, 133, 0.95);
+
+  box-shadow: -1px 2px 15px 0px rgba(249, 44, 133, 0.95);
+
+  box-shadow: -5px 5px 10px 0px rgba(249, 44, 133, 0.95);
+
+  box-shadow: -2px 2px 4px 0px rgba(249, 44, 133, 0.95);
+}
+
+.project_card__image_container {
+  width: 25%;
+}
+
+.project_card__image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.project_card__content {
+  width: 75%;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project_card__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.project_card__title_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project_card__subtitle {
+  color: #000000e6;
+}
+
+.project_card__action_button_container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+
+.project_card__action_button {
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: "Bricolage Grotesque", sans-serif;
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-color);
+  text-decoration-thickness: 2px;
+  /* space between underline and text */
+  text-underline-offset: 4px;
+}
