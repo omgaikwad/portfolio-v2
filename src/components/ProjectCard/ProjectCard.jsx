@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react";
 import styles from "./ProjectCard.module.css";
 
 const ProjectCard = () => {
@@ -27,10 +28,10 @@ const ProjectCard = () => {
         </p>
         <div className={styles["project_card__action_button_container"]}>
           <a href="" className={`${styles["project_card__action_button"]}`}>
-            Github
+            Github <Icon icon="mdi:github" />
           </a>
           <a href="" className={`${styles["project_card__action_button"]}`}>
-            Live
+            Live <Icon icon="fluent:open-12-regular" />
           </a>
         </div>
       </div>

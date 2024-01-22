@@ -15,7 +15,7 @@ export default function Home() {
   };
 
   return (
-    <main className={styles.main}>
+    <main className={styles["main"]}>
       <div className={styles["navbar"]}>
         <div className={styles["logo_container"]}>
           <img
@@ -76,6 +76,17 @@ export default function Home() {
           <ProjectCard />
           <ProjectCard />
           <ProjectCard />
+        </div>
+      </div>
+
+      <div className={styles["education_section"]}>
+        <h2 className={styles["section_heading"]}>Education</h2>
+
+        <div className={styles["education_card_container"]}>
+          <ExperienceCard />
+          <ExperienceCard />
+          <ExperienceCard />
+          <ExperienceCard />
         </div>
       </div>
     </main>

@@ -1,16 +1,9 @@
 .project_card {
   width: 100%;
-  height: 8rem;
-  /* border: 2px solid var(--secondary-color); */
+  height: 15rem;
   border-radius: 8px;
   display: flex;
   padding: 1rem;
-
-  box-shadow: -8px 11px 15px 0px rgba(249, 44, 133, 0.95);
-
-  box-shadow: -1px 2px 15px 0px rgba(249, 44, 133, 0.95);
-
-  box-shadow: -5px 5px 10px 0px rgba(249, 44, 133, 0.95);
 
   box-shadow: -2px 2px 4px 0px rgba(249, 44, 133, 0.95);
 }
@@ -60,6 +53,9 @@
 }
 
 .project_card__action_button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
   border: none;
   cursor: pointer;
   font-size: 1.2rem;
