@@ -3,10 +3,8 @@
 import ExperienceCard from "@/components/ExperienceCard/ExperienceCard";
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import styles from "./page.module.css";
-
-const HighlightedText = ({ children }) => (
-  <span className={styles["highlighted_text"]}>{children}</span>
-);
+import EducationCard from "@/components/EducationCard/EducationCard";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const transition = {
@@ -55,7 +53,126 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles["hero_section__right_container"]}>klsjdf</div>
+        <div className={styles["hero_section__right_container"]}>
+          <motion.svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            xmlnsSvgjs="http://svgjs.dev/svgjs"
+            viewBox="0 0 800 800"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              xmlnsSvgjs="http://svgjs.dev/svgjs"
+              viewBox="0 0 800 800"
+            >
+              <g
+                animate={{
+                  rotate: [0, 360],
+                }}
+                transition={{
+                  duration: 4,
+                  ease: "easeInOut",
+                  loop: Infinity,
+                }}
+                transform="matrix(0.9876883405951378,-0.15643446504023087,0.15643446504023087,0.9876883405951378,-57.64912225414747,-85.50155022196276)"
+              >
+                <circle
+                  r="50"
+                  cx="684"
+                  cy="684"
+                  stroke-width="0.5"
+                  stroke="#f92c85"
+                  fill="none"
+                  opacity="0.47"
+                  transform="rotate(-264, 400, 400)"
+                ></circle>
+                <circle
+                  r="63.6875"
+                  cx="648.5"
+                  cy="648.5"
+                  stroke-width="0.8125"
+                  stroke="#f92c85"
+                  fill="none"
+                  opacity="0.45499999999999996"
+                  transform="rotate(-276, 400, 400)"
+                ></circle>
+                <circle
+                  r="77.375"
+                  cx="613"
+                  cy="613"
+                  stroke-width="1.125"
+                  stroke="#f92c85"
+                  fill="none"
+                  opacity="0.43999999999999995"
+                  transform="rotate(-288, 400, 400)"
+                ></circle>
+                <circle
+                  r="91.0625"
+                  cx="577.5"
+                  cy="577.5"
+                  stroke-width="1.4375"
+                  stroke="#f92c85"
+                  fill="none"
+                  opacity="0.425"
+                  transform="rotate(-300, 400, 400)"
+                ></circle>
+                <circle
+                  r="104.75"
+                  cx="542"
+                  cy="542"
+                  stroke-width="1.75"
+                  stroke="#f92c85"
+                  fill="none"
+                  opacity="0.41"
+                  transform="rotate(-312, 400, 400)"
+                ></circle>
+                <circle
+                  r="118.4375"
+                  cx="506.5"
+                  cy="506.5"
+                  stroke-width="2.0625"
+                  stroke="#f92c85"
+                  fill="none"
+                  opacity="0.39499999999999996"
+                  transform="rotate(-324, 400, 400)"
+                ></circle>
+                <circle
+                  r="132.125"
+                  cx="471"
+                  cy="471"
+                  stroke-width="2.375"
+                  stroke="#f92c85"
+                  fill="none"
+                  opacity="0.38"
+                  transform="rotate(-336, 400, 400)"
+                ></circle>
+                <circle
+                  r="145.8125"
+                  cx="435.5"
+                  cy="435.5"
+                  stroke-width="2.6875"
+                  stroke="#f92c85"
+                  fill="none"
+                  opacity="0.365"
+                  transform="rotate(-348, 400, 400)"
+                ></circle>
+                <circle
+                  r="159.5"
+                  cx="400"
+                  cy="400"
+                  stroke-width="3"
+                  stroke="#f92c85"
+                  fill="none"
+                  opacity="0.35"
+                  transform="rotate(-360, 400, 400)"
+                ></circle>
+              </g>
+            </svg>
+          </motion.svg>{" "}
+        </div>
       </div>
 
       <div className={styles["experience_section"]}>
@@ -83,10 +200,10 @@ export default function Home() {
         <h2 className={styles["section_heading"]}>Education</h2>
 
         <div className={styles["education_card_container"]}>
-          <ExperienceCard />
-          <ExperienceCard />
-          <ExperienceCard />
-          <ExperienceCard />
+          <EducationCard />
+          <EducationCard />
+          <EducationCard />
+          <EducationCard />
         </div>
       </div>
     </main>
