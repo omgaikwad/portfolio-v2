@@ -5,12 +5,11 @@ import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import styles from "./page.module.css";
 import EducationCard from "@/components/EducationCard/EducationCard";
 import { motion } from "framer-motion";
+import experienceData from "../app/experience.json";
 
 export default function Home() {
-  const transition = {
-    duration: 4,
-    ease: "easeInOut",
-  };
+  // Constants
+  const experience = experienceData.experience;
 
   return (
     <main className={styles["main"]}>
@@ -58,7 +57,7 @@ export default function Home() {
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"
             xmlnsXlink="http://www.w3.org/1999/xlink"
-            xmlnsSvgjs="http://svgjs.dev/svgjs"
+            xmlnssvgjs="http://svgjs.dev/svgjs"
             viewBox="0 0 800 800"
           >
             <svg
@@ -179,10 +178,9 @@ export default function Home() {
         <h2 className={styles["section_heading"]}>Experience</h2>
 
         <div className={styles["experience_card_container"]}>
-          <ExperienceCard />
-          <ExperienceCard />
-          <ExperienceCard />
-          <ExperienceCard />
+          {experience.map((item, index) => {
+            return <ExperienceCard key={index} data={item} />;
+          })}
         </div>
       </div>
 

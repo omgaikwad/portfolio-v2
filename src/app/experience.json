@@ -1,0 +1,91 @@
+{
+  "experience": [
+    {
+      "company": "BrainCells",
+      "companyLogo": "/assets/companyLogo/braincells-logo.png",
+      "companyWebsite": "",
+      "experience": "8 mos",
+      "address": "Pune, Maharashtra, India",
+      "designation": "SDE",
+      "jobTime": "Full-time",
+      "timeDuration": "Jun 2023 - Present",
+      "locationType": "On-site",
+      "skills": [
+        "ReactJS",
+        "TypeScript",
+        "Material UI",
+        "JavaScript",
+        "Tailwind CSS",
+        "HTML",
+        "CSS",
+        "Git"
+      ],
+      "description": "Worked on a project for a client in the US. The project was to build a web application for the client's customers to manage their accounts. The project was built using ReactJS, TypeScript, Material UI, Tailwind CSS, and other technologies. I was responsible for building the UI of the application and integrating it with the backend APIs. I also worked on the backend APIs using NodeJS, ExpressJS, and MongoDB. I was also responsible for writing unit tests for the UI components using Jest and React Testing Library."
+    },
+    {
+      "isExperienceConnected": true,
+      "company": "BrainCells",
+      "companyLogo": "/assets/companyLogo/braincells-logo.png",
+      "companyWebsite": "",
+      "experience": "1 yr",
+      "address": "Pune, Maharashtra, India",
+      "designation": "Software Developer Intern",
+      "jobTime": "Internship",
+      "timeDuration": "Jun 2022 - May 2023",
+      "locationType": "On-site",
+      "skills": [
+        "ReactJS",
+        "TypeScript",
+        "Material UI",
+        "JavaScript",
+        "Tailwind CSS",
+        "HTML",
+        "CSS",
+        "Git"
+      ],
+      "description": "Worked on a project for a client in the US. The project was to build a web application for the client's customers to manage their accounts. The project was built using ReactJS, TypeScript, Material UI, Tailwind CSS, and other technologies. I was responsible for building the UI of the application and integrating it with the backend APIs. I also worked on the backend APIs using NodeJS, ExpressJS, and MongoDB. I was also responsible for writing unit tests for the UI components using Jest and React Testing Library."
+    },
+    {
+      "company": "neoG Camp",
+      "companyLogo": "/assets/companyLogo/neog-logo.jpg",
+      "companyWebsite": "",
+      "experience": "6 mos",
+      "address": "Pune, Maharashtra, India",
+      "designation": "Software Developer Intern",
+      "jobTime": "Apprenticeship",
+      "timeDuration": "Jan 2022 - Jun 2022",
+      "locationType": "",
+      "skills": [
+        "ReactJS",
+        "TypeScript",
+        "Material UI",
+        "JavaScript",
+        "Tailwind CSS",
+        "HTML",
+        "CSS",
+        "Git"
+      ],
+      "description": "Worked on a project for a client in the US. The project was to build a web application for the client's customers to manage their accounts. The project was built using ReactJS, TypeScript, Material UI, Tailwind CSS, and other technologies. I was responsible for building the UI of the application and integrating it with the backend APIs. I also worked on the backend APIs using NodeJS, ExpressJS, and MongoDB. I was also responsible for writing unit tests for the UI components using Jest and React Testing Library."
+    },
+    {
+      "company": "Supersapiens Devlab",
+      "companyLogo": "/assets/companyLogo/braincells-logo.png",
+      "companyWebsite": "",
+      "experience": "4 mos",
+      "address": "Pune, Maharashtra, India",
+      "designation": "React Native Developer",
+      "jobTime": "Internship",
+      "timeDuration": "Oct 2021 - Jan 2022",
+      "locationType": "",
+      "skills": [
+        "React Native",
+        "JavaScript",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Git"
+      ],
+      "description": "Worked on a project for a client in the US. The project was to build a web application for the client's customers to manage their accounts. The project was built using ReactJS, TypeScript, Material UI, Tailwind CSS, and other technologies. I was responsible for building the UI of the application and integrating it with the backend APIs. I also worked on the backend APIs using NodeJS, ExpressJS, and MongoDB. I was also responsible for writing unit tests for the UI components using Jest and React Testing Library."
+    }
+  ]
+}
