@@ -1,7 +1,11 @@
 import { Icon } from "@iconify/react";
 import styles from "./ProjectCard.module.css";
 
-const ProjectCard = () => {
+const ProjectCard = (props) => {
+  const { data } = props;
+  const { title, subtitle, description, githubRepoLink, liveProjectLink } =
+    data;
+
   return (
     <div className={styles["project_card"]}>
       <div className={styles["project_card__image_container"]}>
@@ -15,22 +19,22 @@ const ProjectCard = () => {
 
       <div className={styles["project_card__content"]}>
         <div className={styles["project_card__title_container"]}>
-          <h3 className={styles["project_card__title"]}>Spotlight</h3>
+          <h3 className={styles["project_card__title"]}>{title}</h3>
 
-          <p className={styles["project_card__subtitle"]}>Video Library App</p>
+          <p className={styles["project_card__subtitle"]}>{subtitle}</p>
         </div>
-        <p className={styles["project_card__description"]}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptates, quos, voluptatem quod, quia nemo voluptate quibusdam
-          voluptatibus quae doloribus consequuntur. Quisquam voluptates, quos,
-          voluptatem quod, quia nemo voluptate quibusdam voluptatibus quae
-          doloribus consequuntur.
-        </p>
+        <p className={styles["project_card__description"]}>{description}</p>
         <div className={styles["project_card__action_button_container"]}>
-          <a href="" className={`${styles["project_card__action_button"]}`}>
+          <a
+            href={githubRepoLink}
+            className={`${styles["project_card__action_button"]}`}
+          >
             Github <Icon icon="mdi:github" />
           </a>
-          <a href="" className={`${styles["project_card__action_button"]}`}>
+          <a
+            href={liveProjectLink}
+            className={`${styles["project_card__action_button"]}`}
+          >
             Live <Icon icon="fluent:open-12-regular" />
           </a>
         </div>

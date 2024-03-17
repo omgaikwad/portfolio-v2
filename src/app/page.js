@@ -6,10 +6,14 @@ import styles from "./page.module.css";
 import EducationCard from "@/components/EducationCard/EducationCard";
 import { motion } from "framer-motion";
 import experienceData from "../app/experience.json";
+import projectsData from "../app/projects.json";
+import educationData from "../app/education.json";
 
 export default function Home() {
   // Constants
   const experience = experienceData.experience;
+  const projects = projectsData.projects;
+  const education = educationData.education;
 
   return (
     <main className={styles["main"]}>
@@ -40,10 +44,10 @@ export default function Home() {
             <h1 className={styles["heading"]}>Om Gaikwad</h1>
             <p className={styles["sub_heading"]}>Software engineer</p>
             <p className={styles["about_summary"]}>
-              I'm Om Gaikwad, a software engineer based in Pune, India. I
-              currently work as a SDE Frontend at BrainCells for over 1.5 years.
-              I love building innovative, scalable and responsive products while
-              crafting beautiful user experiences.
+              I'm Om Gaikwad, a software engineer based in Pune, India. I am
+              currently working as a SDE Frontend at BrainCells for over 1.5
+              years. I love building innovative, scalable and responsive
+              products while crafting beautiful user experiences.
             </p>
 
             <button style={{ marginTop: "1rem" }} className={styles["button"]}>
@@ -188,9 +192,9 @@ export default function Home() {
         <h2 className={styles["section_heading"]}>Projects</h2>
 
         <div className={styles["project_card_container"]}>
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          {projects.map((item, index) => {
+            return <ProjectCard key={index} data={item} />;
+          })}
         </div>
       </div>
 
@@ -198,10 +202,9 @@ export default function Home() {
         <h2 className={styles["section_heading"]}>Education</h2>
 
         <div className={styles["education_card_container"]}>
-          <EducationCard />
-          <EducationCard />
-          <EducationCard />
-          <EducationCard />
+          {education.map((item, index) => {
+            return <EducationCard key={index} data={item} />;
+          })}
         </div>
       </div>
     </main>

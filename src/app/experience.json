@@ -1,29 +1,30 @@
 {
   "experience": [
     {
+      "isExperienceConnected": true,
+      "connectedExperience": "1 yr 10 mos",
       "company": "BrainCells",
       "companyLogo": "/assets/companyLogo/braincells-logo.png",
       "companyWebsite": "",
-      "experience": "8 mos",
+      "experience": "10 mos",
       "address": "Pune, Maharashtra, India",
       "designation": "SDE",
       "jobTime": "Full-time",
       "timeDuration": "Jun 2023 - Present",
       "locationType": "On-site",
       "skills": [
-        "ReactJS",
+        "NextJS",
         "TypeScript",
         "Material UI",
         "JavaScript",
         "Tailwind CSS",
         "HTML",
-        "CSS",
-        "Git"
+        "CSS"
       ],
-      "description": "Worked on a project for a client in the US. The project was to build a web application for the client's customers to manage their accounts. The project was built using ReactJS, TypeScript, Material UI, Tailwind CSS, and other technologies. I was responsible for building the UI of the application and integrating it with the backend APIs. I also worked on the backend APIs using NodeJS, ExpressJS, and MongoDB. I was also responsible for writing unit tests for the UI components using Jest and React Testing Library."
+      "description": ""
     },
     {
-      "isExperienceConnected": true,
+      "isSameOrgExperience": true,
       "company": "BrainCells",
       "companyLogo": "/assets/companyLogo/braincells-logo.png",
       "companyWebsite": "",
@@ -35,15 +36,14 @@
       "locationType": "On-site",
       "skills": [
         "ReactJS",
-        "TypeScript",
-        "Material UI",
+        "Ionic Framework",
         "JavaScript",
         "Tailwind CSS",
         "HTML",
         "CSS",
         "Git"
       ],
-      "description": "Worked on a project for a client in the US. The project was to build a web application for the client's customers to manage their accounts. The project was built using ReactJS, TypeScript, Material UI, Tailwind CSS, and other technologies. I was responsible for building the UI of the application and integrating it with the backend APIs. I also worked on the backend APIs using NodeJS, ExpressJS, and MongoDB. I was also responsible for writing unit tests for the UI components using Jest and React Testing Library."
+      "description": ""
     },
     {
       "company": "neoG Camp",
@@ -65,7 +65,7 @@
         "CSS",
         "Git"
       ],
-      "description": "Worked on a project for a client in the US. The project was to build a web application for the client's customers to manage their accounts. The project was built using ReactJS, TypeScript, Material UI, Tailwind CSS, and other technologies. I was responsible for building the UI of the application and integrating it with the backend APIs. I also worked on the backend APIs using NodeJS, ExpressJS, and MongoDB. I was also responsible for writing unit tests for the UI components using Jest and React Testing Library."
+      "description": "Fullstack web development bootcamp where I learned React Ecosystem and built multiple Projects."
     },
     {
       "company": "Supersapiens Devlab",
@@ -85,7 +85,7 @@
         "CSS",
         "Git"
       ],
-      "description": "Worked on a project for a client in the US. The project was to build a web application for the client's customers to manage their accounts. The project was built using ReactJS, TypeScript, Material UI, Tailwind CSS, and other technologies. I was responsible for building the UI of the application and integrating it with the backend APIs. I also worked on the backend APIs using NodeJS, ExpressJS, and MongoDB. I was also responsible for writing unit tests for the UI components using Jest and React Testing Library."
+      "description": "Worked on developing a product called 'Dbeats' which is an NFT marketplace and live streaming web3 app refactored and redesigned the Metamask Wallet Mobile Open Source Architecture(React Native) to cater to the needs of the design and product requirements for the Dbeats mobile app. Learnings:  working on large codebase projects that you have never been involved in before writing production-ready code learning React Native while working on it."
     }
   ]
 }

@@ -1,7 +1,10 @@
 import SpecialText from "../SpecialText/SpecialText";
 import styles from "./EducationCard.module.css";
 
-const EducationCard = () => {
+const EducationCard = (props) => {
+  const { data } = props;
+  const { name, degree, duration, grade } = data;
+
   return (
     <div className={styles["experience_card"]}>
       <div className={styles["experience_card__org_container"]}>
@@ -15,14 +18,10 @@ const EducationCard = () => {
 
         <div className={styles["experience_container"]}>
           <div className={styles["org_details_container"]}>
-            <p className={styles["org_name"]}>
-              D. Y. Patil College of Engineering (DYPCOE) , Akurdi, Pune
-            </p>
-            <p className={styles["job_type"]}>
-              Bachelor of Engineering, Information Technology
-            </p>
+            <p className={styles["org_name"]}>{name}</p>
+            <p className={styles["job_type"]}>{degree}</p>
             <p className={styles["job_duration"]}>
-              Aug 2019 - Jun 2023 •{" "}
+              {duration} •{" "}
               <SpecialText className={styles["experience_duration"]}>
                 4 yrs
               </SpecialText>
@@ -31,10 +30,12 @@ const EducationCard = () => {
 
           <div className={styles["job_role_container"]}>
             <div className={styles["job_description_container"]}>
-              <p className={styles["skills"]}>
-                <span className={styles["skills_title"]}>Grade: </span>
-                <span className={styles["skills_list"]}>8.50</span>
-              </p>
+              {grade && (
+                <p className={styles["skills"]}>
+                  <span className={styles["skills_title"]}>Grade: </span>
+                  <span className={styles["skills_list"]}>{grade}</span>
+                </p>
+              )}
             </div>
           </div>
         </div>

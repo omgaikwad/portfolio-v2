@@ -4,6 +4,7 @@ import styles from "./ExperienceCard.module.css";
 const ExperienceCard = ({ data }) => {
   const {
     isExperienceConnected = false,
+
     company,
     companyLogo,
     companyWebsite,
@@ -15,12 +16,15 @@ const ExperienceCard = ({ data }) => {
     locationType,
     skills,
     description,
+    connectedExperience,
+    isSameOrgExperience,
   } = data;
+
   return (
     <div className={styles["experience_card"]}>
       <div className={styles["experience_card__org_container"]}>
         <div className={styles["org_logo_container"]}>
-          {!isExperienceConnected && (
+          {!isSameOrgExperience && (
             <img
               className={styles["org_logo"]}
               src={companyLogo}
@@ -30,24 +34,30 @@ const ExperienceCard = ({ data }) => {
         </div>
 
         <div className={styles["experience_container"]}>
-          <div className={styles["org_details_container"]}>
-            <p className={styles["org_name"]}>{company}</p>
+          {!isSameOrgExperience && (
+            <div className={styles["org_details_container"]}>
+              <p className={styles["org_name"]}>{company}</p>
 
-            {!isExperienceConnected && (
-              <SpecialText className={styles["experience_duration"]}>
-                1 yr 8 mos
-              </SpecialText>
-            )}
+              {isExperienceConnected ? (
+                <SpecialText className={styles["experience_duration"]}>
+                  {connectedExperience}
+                </SpecialText>
+              ) : (
+                <SpecialText className={styles["experience_duration"]}>
+                  {experience}
+                </SpecialText>
+              )}
 
-            <p className={styles["org_location"]}>{address}</p>
-          </div>
+              <p className={styles["org_location"]}>{address}</p>
+            </div>
+          )}
 
           <div className={styles["job_role_container"]}>
             <div className={styles["job_title_container"]}>
               <p className={styles["job_role"]}>{designation}</p>
               <p className={styles["job_type"]}>{jobTime}</p>
               <p className={styles["job_duration"]}>
-                {timeDuration} • <SpecialText>{experience}</SpecialText>{" "}
+                {timeDuration} • <SpecialText>{experience}</SpecialText>
               </p>
               <p className={styles["job_location"]}>{locationType}</p>
             </div>
