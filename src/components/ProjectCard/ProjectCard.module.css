@@ -19,6 +19,8 @@
   width: 6rem;
   height: fit-content;
 
+  /* Object fit conver */
+
   object-fit: cover;
 }
 
