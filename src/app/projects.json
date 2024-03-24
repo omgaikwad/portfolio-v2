@@ -1,11 +1,36 @@
 {
   "projects": [
     {
+      "title": "crimsonUI",
+      "subtitle": "UI Library",
+      "description": "crimsonUI is a CSS library with predefined styled class to develop elegant, fast and responsive user interface for your web apps.",
+      "githubRepoLink": "https://github.com/omgaikwad/crimsonUI",
+      "liveProjectLink": "https://crimsonui-beta.netlify.app/",
+      "projectImage": "/assets/projects/crimsonui-logo.png"
+    },
+    {
       "title": "Spotlight",
       "subtitle": "Video Library App",
       "description": "Spotlight video library app",
-      "githubRepoLink": "",
-      "liveProjectLink": ""
+      "githubRepoLink": "https://github.com/omgaikwad/spotlight-frontend",
+      "liveProjectLink": "https://spotlight-theapp.netlify.app/",
+      "projectImage": "/assets/projects/spotlight-logo.png"
+    },
+    {
+      "title": "3AM Tales",
+      "subtitle": "Ecommerce App",
+      "description": "3AM TALES is an online marketplace to buy books whether it is fiction, self-help, biography or non-fiction. It is one stop destination for all things books.",
+      "githubRepoLink": "https://github.com/omgaikwad/3amTales-frontend",
+      "liveProjectLink": "https://3amtales.netlify.app/",
+      "projectImage": "/assets/projects/3amtales-logo.png"
+    },
+    {
+      "title": "serene",
+      "subtitle": "Productivity App",
+      "description": "serene - stay focused | avoid distractions | track time",
+      "githubRepoLink": "https://github.com/omgaikwad/my-pomodoro",
+      "liveProjectLink": "https://sereneapp.netlify.app/",
+      "projectImage": "/assets/projects/serene-logo.png"
     }
   ]
 }

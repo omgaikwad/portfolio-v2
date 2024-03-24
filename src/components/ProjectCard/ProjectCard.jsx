@@ -3,16 +3,22 @@ import styles from "./ProjectCard.module.css";
 
 const ProjectCard = (props) => {
   const { data } = props;
-  const { title, subtitle, description, githubRepoLink, liveProjectLink } =
-    data;
+  const {
+    title,
+    subtitle,
+    description,
+    githubRepoLink,
+    liveProjectLink,
+    projectImage,
+  } = data;
 
   return (
     <div className={styles["project_card"]}>
       <div className={styles["project_card__image_container"]}>
         {/* random square image */}
         <img
-          src={`https://picsum.photos/seed/${Math.random()}/500/500`}
-          alt="random"
+          src={projectImage}
+          alt="project-image"
           className={styles["project_card__image"]}
         />
       </div>

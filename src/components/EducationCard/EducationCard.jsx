@@ -3,7 +3,7 @@ import styles from "./EducationCard.module.css";
 
 const EducationCard = (props) => {
   const { data } = props;
-  const { name, degree, duration, grade } = data;
+  const { name, degree, duration, grade, logo, totalTime } = data;
 
   return (
     <div className={styles["experience_card"]}>
@@ -11,7 +11,7 @@ const EducationCard = (props) => {
         <div className={styles["org_logo_container"]}>
           <img
             className={styles["org_logo"]}
-            src="https://via.placeholder.com/150"
+            src={logo}
             alt="Organization Logo"
           />
         </div>
@@ -20,12 +20,14 @@ const EducationCard = (props) => {
           <div className={styles["org_details_container"]}>
             <p className={styles["org_name"]}>{name}</p>
             <p className={styles["job_type"]}>{degree}</p>
-            <p className={styles["job_duration"]}>
-              {duration} •{" "}
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <p className={styles["job_duration"]}>{duration}</p>
+              <p className={styles["job_duration"]}>•</p>
+
               <SpecialText className={styles["experience_duration"]}>
-                4 yrs
+                {totalTime}
               </SpecialText>
-            </p>
+            </div>
           </div>
 
           <div className={styles["job_role_container"]}>

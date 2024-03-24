@@ -4,17 +4,23 @@
       "name": "D. Y. Patil College of Engineering (DYPCOE) , Akurdi, Pune",
       "degree": "Bachelor of Engineering, Information Technology",
       "duration": "Aug 2019 - Jun 2023",
+      "totalTime": "4 yrs",
+      "logo": "/assets/educationLogo/dypatil-logo.jpg",
       "grade": "8.50"
     },
     {
       "name": "Vivekananda College of Arts and Science, Aurangabad, India",
       "degree": "High School, Science",
-      "duration": "2017 - 2019"
+      "duration": "2017 - 2019",
+      "totalTime": "2 yrs",
+      "logo": "/assets/educationLogo/vivekananda-logo.webp"
     },
     {
       "name": "SBOA Public School - India",
       "degree": "School",
-      "duration": "2003 - 2017"
+      "duration": "2003 - 2017",
+      "totalTime": "14 yrs",
+      "logo": "/assets/educationLogo/sboa-logo.png"
     }
   ]
 }
